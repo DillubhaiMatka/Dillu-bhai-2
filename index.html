@@ -1,173 +1,72 @@
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #0d1729;
-  color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
-}
+  <title>Dillu Bhai Vip</title>
 
-.container {
-  width: 100%;
-  max-width: 900px;
-  min-height: 100vh;
-  margin: auto;
-  padding: 250px 40px 100px;
-}
+  <link rel="stylesheet" href="style.css">
 
-/* Logo */
-.logo-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 45px;
-}
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 
-.logo {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
+<body>
 
-/* Heading */
-h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 58px;
-  line-height: 1.2;
-  font-weight: 700;
-}
+  <div class="container">
 
-/* Subscribers */
-.subscribers {
-  margin-top: 35px;
-  text-align: center;
-  font-size: 38px;
-  font-weight: 700;
-  color: #00a8ff;
-}
+    <!-- Logo -->
+    <div class="logo-box">
+      <img
+        src="https://raw.githubusercontent.com/DillubhaiMatka/Dillu-bhai-2/main/IMG_20260723_183859_045.jpg"
+        alt="Dillu Bhai Vip"
+        class="logo"
+      >
+    </div>
 
-.subscribers span {
-  color: #00d95f;
-}
+    <!-- Heading -->
+    <h1>Dillu Bhai Vip</h1>
 
-/* Tagline */
-.tagline {
-  margin-top: 35px;
-  text-align: center;
-  color: #d5d9e0;
-  font-size: 32px;
-  line-height: 1.65;
-}
+    <!-- Subscribers -->
+    <div class="subscribers">
+      👥 <span>35,007 Subscribers</span>
+    </div>
 
-.tagline p {
-  margin: 0;
-}
+    <!-- Text -->
+    <div class="tagline">
+      <p>No. 1 Matka King</p>
+      <p>Trusted By 50000+ Members</p>
+    </div>
 
-/* Telegram Button */
-.telegram-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    <!-- Telegram Button -->
+    <a
+      href="https://t.me/+HBzm1B2SKL0zYjhl"
+      class="telegram-btn"
+    >
+      🚀 Join Telegram
+    </a>
 
-  width: 100%;
-  min-height: 110px;
+    <!-- Countdown -->
+    <div class="countdown">
+      Redirecting in <span id="timer">15</span> seconds...
+    </div>
 
-  margin-top: 65px;
+    <!-- Description -->
+    <div class="description">
+      <h2>Description</h2>
 
-  background: #0aa4dc;
-  color: #ffffff;
+      <p>✅ Giving Results For Last 6 Years</p>
+      <p>✅ Community of 50,000+ Members</p>
+      <p>✅ Ek Baar Results Jaroor Dekhe</p>
+      <p>✅ Free Joining</p>
+    </div>
 
-  text-decoration: none;
-  text-align: center;
+  </div>
 
-  border-radius: 28px;
+  <script src="script.js"></script>
 
-  font-size: 38px;
-  font-weight: 700;
-
-  transition: 0.2s ease;
-}
-
-.telegram-btn:hover {
-  transform: scale(1.02);
-  background: #0798cc;
-}
-
-/* Countdown */
-.countdown {
-  margin-top: 35px;
-  text-align: center;
-  color: #aeb6c5;
-  font-size: 28px;
-}
-
-/* Description */
-.description {
-  margin-top: 110px;
-}
-
-.description h2 {
-  margin: 0 0 35px;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.description p {
-  margin: 20px 0;
-  font-size: 28px;
-  line-height: 1.5;
-  color: #f1f3f6;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-
-  .container {
-    padding: 250px 40px 80px;
-  }
-
-  .logo {
-    width: 220px;
-    height: 220px;
-  }
-
-  h1 {
-    font-size: 42px;
-  }
-
-  .subscribers {
-    font-size: 28px;
-  }
-
-  .tagline {
-    font-size: 24px;
-  }
-
-  .telegram-btn {
-    min-height: 105px;
-    border-radius: 25px;
-    font-size: 30px;
-  }
-
-  .countdown {
-    font-size: 23px;
-  }
-
-  .description {
-    margin-top: 90px;
-  }
-
-  .description h2 {
-    font-size: 30px;
-  }
-
-  .description p {
-    font-size: 22px;
-  }
-}
+</body>
+</html>
