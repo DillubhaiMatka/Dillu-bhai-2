@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d1729;
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 250px 40px 100px;
+}
+
+/* Logo */
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.logo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Heading */
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 58px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Subscribers */
+.subscribers {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #00a8ff;
+}
+
+.subscribers span {
+  color: #00d95f;
+}
+
+/* Tagline */
+.tagline {
+  margin-top: 35px;
+  text-align: center;
+  color: #d5d9e0;
+  font-size: 32px;
+  line-height: 1.65;
+}
+
+.tagline p {
+  margin: 0;
+}
+
+/* Telegram Button */
+.telegram-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 110px;
+
+  margin-top: 65px;
+
+  background: #0aa4dc;
+  color: #ffffff;
+
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 28px;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.telegram-btn:hover {
+  transform: scale(1.02);
+  background: #0798cc;
+}
+
+/* Countdown */
+.countdown {
+  margin-top: 35px;
+  text-align: center;
+  color: #aeb6c5;
+  font-size: 28px;
+}
+
+/* Description */
+.description {
+  margin-top: 110px;
+}
+
+.description h2 {
+  margin: 0 0 35px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.description p {
+  margin: 20px 0;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #f1f3f6;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .container {
+    padding: 250px 40px 80px;
+  }
+
+  .logo {
+    width: 220px;
+    height: 220px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .subscribers {
+    font-size: 28px;
+  }
+
+  .tagline {
+    font-size: 24px;
+  }
+
+  .telegram-btn {
+    min-height: 105px;
+    border-radius: 25px;
+    font-size: 30px;
+  }
+
+  .countdown {
+    font-size: 23px;
+  }
+
+  .description {
+    margin-top: 90px;
+  }
+
+  .description h2 {
+    font-size: 30px;
+  }
+
+  .description p {
+    font-size: 22px;
+  }
+}
