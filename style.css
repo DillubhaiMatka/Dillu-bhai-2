@@ -12,9 +12,9 @@ body {
 }
 
 body {
-  background: #0d192b;
+  background: #0d1729;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .container {
@@ -22,16 +22,15 @@ body {
   max-width: 600px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 40px 70px;
+  padding: 235px 40px 80px;
 }
 
-/* LOGO */
+/* Logo */
 .logo-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0;
-  margin-bottom: 90px;
+  margin-bottom: 65px;
 }
 
 .logo {
@@ -41,33 +40,32 @@ body {
   border-radius: 50%;
 }
 
-/* HEADING */
+/* Heading */
 h1 {
   margin: 0;
   text-align: center;
   font-size: 43px;
   line-height: 1.2;
   font-weight: 700;
-  white-space: nowrap;
 }
 
-/* SUBSCRIBERS */
+/* Subscribers */
 .subscribers {
-  margin-top: 75px;
+  margin-top: 55px;
   text-align: center;
   font-size: 28px;
   font-weight: 700;
-  color: #00a8ff;
   white-space: nowrap;
+  color: #00a8ff;
 }
 
 .subscribers span {
   color: #00e65c;
 }
 
-/* TAGLINE */
+/* Tagline */
 .tagline {
-  margin-top: 65px;
+  margin-top: 50px;
   text-align: center;
   color: #d7dce5;
   font-size: 25px;
@@ -78,16 +76,16 @@ h1 {
   margin: 0;
 }
 
-/* TELEGRAM BUTTON */
+/* Telegram Button */
 .telegram-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 100%;
-  height: 175px;
+  height: 110px;
 
-  margin-top: 110px;
+  margin-top: 65px;
 
   background: #08a8df;
   color: #ffffff;
@@ -95,46 +93,49 @@ h1 {
   text-decoration: none;
   text-align: center;
 
-  border-radius: 35px;
+  border-radius: 28px;
 
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
+
+  transition: transform 0.2s ease;
 }
 
-/* COUNTDOWN */
+.telegram-btn:active {
+  transform: scale(0.98);
+}
+
+/* Countdown */
 .countdown {
-  margin-top: 55px;
+  margin-top: 32px;
   text-align: center;
   color: #aeb8ca;
-  font-size: 25px;
+  font-size: 22px;
 }
 
-/* DESCRIPTION */
+/* Description */
 .description {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .description h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  margin: 0 0 25px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .description p {
-  font-size: 23px;
-  line-height: 1.6;
   margin: 18px 0;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #f1f3f6;
 }
 
-/* MOBILE */
+/* Mobile */
 @media (max-width: 600px) {
 
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .logo-box {
-    margin-bottom: 90px;
+    padding: 235px 40px 70px;
   }
 
   .logo {
@@ -155,17 +156,16 @@ h1 {
   }
 
   .telegram-btn {
-    height: 175px;
-    font-size: 35px;
+    height: 110px;
+    font-size: 30px;
   }
 }
 
-/* VERY SMALL MOBILE */
+/* Small Mobile */
 @media (max-width: 380px) {
 
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 180px 20px 60px;
   }
 
   .logo {
@@ -174,11 +174,11 @@ h1 {
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 36px;
   }
 
   .subscribers {
-    font-size: 22px;
+    font-size: 23px;
   }
 
   .tagline {
@@ -186,12 +186,20 @@ h1 {
   }
 
   .telegram-btn {
-    height: 130px;
-    font-size: 27px;
-    border-radius: 28px;
+    height: 95px;
+    font-size: 26px;
+    border-radius: 24px;
   }
 
   .countdown {
+    font-size: 19px;
+  }
+
+  .description h2 {
+    font-size: 27px;
+  }
+
+  .description p {
     font-size: 19px;
   }
 }
