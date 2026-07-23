@@ -174,11 +174,11 @@ h1 {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .subscribers {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   .tagline {
@@ -187,11 +187,11 @@ h1 {
 
   .telegram-btn {
     height: 130px;
-    font-size: 28px;
+    font-size: 27px;
     border-radius: 28px;
   }
 
   .countdown {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
