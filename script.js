@@ -1,4 +1,4 @@
-let timeLeft = 15;
+let timeLeft = 3;
 
 const timer = document.getElementById("timer");
 
