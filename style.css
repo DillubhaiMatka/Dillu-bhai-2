@@ -2,204 +2,161 @@
   box-sizing: border-box;
 }
 
-html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  background: #0d1729;
-  color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
+  background: #101a2d;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 850px;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 235px 40px 80px;
+  margin: auto;
+  padding: 250px 40px 100px;
+  text-align: center;
 }
 
-/* Logo */
-.logo-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 65px;
-}
-
-.logo {
-  width: 220px;
-  height: 220px;
+/* Profile Image */
+.profile {
+  width: 225px;
+  height: 225px;
   object-fit: cover;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto 55px;
 }
 
 /* Heading */
 h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 43px;
+  font-size: 58px;
   line-height: 1.2;
+  margin: 0 0 35px;
   font-weight: 700;
 }
 
 /* Subscribers */
 .subscribers {
-  margin-top: 55px;
-  text-align: center;
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 700;
-  white-space: nowrap;
-  color: #00a8ff;
+  color: #00d95f;
+  margin-bottom: 35px;
 }
 
-.subscribers span {
-  color: #00e65c;
+.subscribers:first-letter {
+  color: #0099e5;
 }
 
 /* Tagline */
 .tagline {
-  margin-top: 50px;
-  text-align: center;
-  color: #d7dce5;
-  font-size: 25px;
-  line-height: 1.8;
-}
-
-.tagline p {
-  margin: 0;
+  color: #d9dce5;
+  font-size: 31px;
+  line-height: 1.7;
+  margin: 0 0 60px;
 }
 
 /* Telegram Button */
-.telegram-btn {
+.join-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   width: 100%;
-  height: 110px;
+  min-height: 110px;
 
-  margin-top: 65px;
-
-  background: #08a8df;
-  color: #ffffff;
+  background: #0aa5df;
+  color: white;
 
   text-decoration: none;
-  text-align: center;
-
   border-radius: 28px;
 
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 700;
 
-  transition: transform 0.2s ease;
+  transition: 0.2s;
 }
 
-.telegram-btn:active {
-  transform: scale(0.98);
+.join-btn:active {
+  transform: scale(0.97);
 }
 
 /* Countdown */
 .countdown {
-  margin-top: 32px;
-  text-align: center;
-  color: #aeb8ca;
-  font-size: 22px;
+  color: #aeb5c4;
+  font-size: 28px;
+  margin-top: 35px;
 }
 
 /* Description */
 .description {
-  margin-top: 90px;
+  text-align: left;
+  margin-top: 100px;
 }
 
 .description h2 {
-  margin: 0 0 25px;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 25px;
 }
 
 .description p {
-  margin: 18px 0;
-  font-size: 22px;
-  line-height: 1.5;
-  color: #f1f3f6;
+  color: #e2e5eb;
+  font-size: 28px;
+  line-height: 1.7;
+  margin: 12px 0;
 }
 
 /* Mobile */
 @media (max-width: 600px) {
 
   .container {
-    padding: 235px 40px 70px;
+    padding: 245px 40px 80px;
   }
 
-  .logo {
-    width: 220px;
-    height: 220px;
+  .profile {
+    width: 225px;
+    height: 225px;
+    margin-bottom: 45px;
   }
 
   h1 {
-    font-size: 43px;
+    font-size: 45px;
+    margin-bottom: 30px;
   }
 
   .subscribers {
-    font-size: 28px;
+    font-size: 29px;
+    margin-bottom: 30px;
   }
 
   .tagline {
     font-size: 25px;
+    line-height: 1.8;
+    margin-bottom: 50px;
   }
 
-  .telegram-btn {
-    height: 110px;
-    font-size: 30px;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 380px) {
-
-  .container {
-    padding: 180px 20px 60px;
-  }
-
-  .logo {
-    width: 180px;
-    height: 180px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  .subscribers {
-    font-size: 23px;
-  }
-
-  .tagline {
-    font-size: 20px;
-  }
-
-  .telegram-btn {
-    height: 95px;
-    font-size: 26px;
-    border-radius: 24px;
+  .join-btn {
+    min-height: 108px;
+    font-size: 29px;
+    border-radius: 25px;
   }
 
   .countdown {
-    font-size: 19px;
+    font-size: 23px;
+    margin-top: 30px;
+  }
+
+  .description {
+    margin-top: 85px;
   }
 
   .description h2 {
-    font-size: 27px;
+    font-size: 31px;
   }
 
   .description p {
-    font-size: 19px;
+    font-size: 23px;
+    line-height: 1.8;
   }
 }
